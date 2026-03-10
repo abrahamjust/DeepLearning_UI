@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.HomeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeTitleHeading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+}
+
+.HomeTitleSubHeading {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.HomeListDiv {
+    background-color: white;
+    width: 400px;
+    height: 150px;
+    border-radius: 7px;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+li::marker {
+    color: #432DD7;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.HomeButton {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: #432DD7;
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.HomeButton:hover {
+    background-color: #3723b6;
+}
+
+.HomeBottomDiv {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}

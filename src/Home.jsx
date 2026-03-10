@@ -1,4 +1,5 @@
 export { Home };
+import './Home.css'
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function HomeBottom() {
     return (
         <>
             <button className="HomeButton">Get Started</button>
-            <div>Secure, fast, and easy to use</div>
+            <div className='HomeBottomDiv'>Secure, fast, and easy to use</div>
         </>
     )
 }
@@ -46,10 +47,10 @@ function List() {
 function Picture() {
     return (
         <>
-            <svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="HomeSVG">
+            <svg width="200" height="200" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" className="HomeSVG">
   
                 {/* Circle */}
-                <circle cx="128" cy="128" r="85" fill="#E6E6E6"/>
+                <circle cx="128" cy="128" r="85" fill="#ffffff"/>
 
                 {/* Scan brackets + center line */} 
                 <g stroke="#4F46E5" strokeWidth="8" strokeLinecap="round" fill="none">
