@@ -35,9 +35,9 @@ function List() {
         <>
             <div className="HomeListDiv">
                 <ul>
-                    <li>Advanced OCR technology</li>
-                    <li>AI-powered text analysis</li>
-                    <li>Fast and accurate results</li>
+                    <li className='HomeListElement'>Advanced OCR technology</li>
+                    <li className='HomeListElement'>AI-powered text analysis</li>
+                    <li className='HomeListElement'>Fast and accurate results</li>
                 </ul>
             </div>
         </>

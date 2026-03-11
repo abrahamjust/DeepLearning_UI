@@ -30,11 +30,11 @@
     margin-bottom: 20px;
 }
 
-li::marker {
+.HomeListElement::marker {
     color: #432DD7;
 }
 
-li {
+.HomeListElement {
     margin-bottom: 10px;
 }
 

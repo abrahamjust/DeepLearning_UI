@@ -1,0 +1,155 @@
+.ScanContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScanHeader {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.ScanHeaderDiv {
+    width: 500px;
+}
+
+.BackButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.BackButton:hover {
+    background-color: rgb(214, 211, 211);
+}
+
+.ScanHeaderDiv {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ScanUploadOuterContainer {
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.ScanUploadInnerContainer {
+    font-family: "Montserrat", sans-serif;
+    border-style: dashed;
+    border-color: rgb(185, 184, 184);
+    border-radius: 5px;
+    width: 440px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScanUploadUpload {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.ScanUploadUpload+p{
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+input {
+    display: none;
+}
+
+.ScanUploadButton {
+    margin-top: 10px;
+    color: white;
+    background-color: #432DD7;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ScanUploadButton:hover {
+    background-color: #3723b6;
+}
+
+.ScanUploadSVG {
+    width: 50px;
+    height: 50px;
+}
+
+.ScanPhotoOuterContainer {
+    background-color: white;
+    border-radius: 5px;
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ScanPhotoInnerContainer {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(213, 210, 210);
+    width: 440px;
+    height: 41px;
+    border-width: 1px;
+}
+
+.ScanPhotoInnerContainerLabel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+}
+
+.ScanPhotoInnerContainerLabel:hover {
+    background-color: rgb(232, 230, 230);
+}
+
+.ScanFooter {
+    width: 500px;
+    height: 120px;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(78, 76, 76);
+}
+
+.ScanFooterListElement::marker {
+    color: rgb(103, 103, 103);
+}
+
+.ScanFooterListElement {
+    color: rgb(132, 130, 130);
+}
