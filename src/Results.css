@@ -1,0 +1,90 @@
+.ResultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ResultsHeader {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    gap: 5px;
+}
+
+.ResultsHeaderDiv {
+    width: 500px;
+}
+
+.ResultTextArea {
+    width: min(600px, 90%);
+    height: 400px;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    resize: vertical;
+}
+
+.ResultTextArea:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.ResultTextAreaDiv {
+    padding: 5px;
+    min-height: 400px;
+}
+
+.ResultsTextTitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+}
+
+.ResultsTextDiv {
+    background-color: white;
+    width: 600px;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.ResultImage {
+    width: min(600px, 90%);
+    border-radius: 8px;
+}
+
+.ResultReturnHome {
+    margin-top: 20px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    background-color: #432DD7;
+    border-radius: 5px;
+    width: 400px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.ResultReturnHome:hover {
+    background-color: #3723b6;
+}
+
+.ResultsImg {
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 600px;
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 5px;
+    font-weight: 500;
+}
