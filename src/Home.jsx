@@ -1,21 +1,21 @@
 export { Home };
 import './Home.css'
 
-function Home() {
+function Home({ goToScan }) {
     return (
         <div className="HomeContainer">
             <Picture />
             <Title />
             <List />
-            <HomeBottom />
+            <HomeBottom goToScan={goToScan} />
         </div>
     )
 }
 
-function HomeBottom() {
+function HomeBottom({ goToScan }) {
     return (
         <>
-            <button className="HomeButton">Get Started</button>
+            <button className="HomeButton" onClick={goToScan}>Get Started</button>
             <div className='HomeBottomDiv'>Secure, fast, and easy to use</div>
         </>
     )

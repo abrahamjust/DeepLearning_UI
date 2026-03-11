@@ -1,7 +1,17 @@
+import { useEffect } from "react"
 import './Loading.css'
 export { Loading }
 
-function Loading() {
+function Loading({ goToResult }) {
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            goToResult()
+        }, 5000)
+
+        return () => clearTimeout(timer)
+    }, [])
+
     return(
         <div className='LoadingContainer'>
             <LoadingDiv />

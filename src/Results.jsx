@@ -1,13 +1,13 @@
 import './Results.css'
 export { Result }
 
-function Result() {
+function Result({ goToHome }) {
     return (
         <div className='ResultContainer'>
             <Header />
             <ResultsText />
             <ResultsImage />
-            <ReturnHomeButton />
+            <ReturnHomeButton goToHome={ goToHome }/>
         </div>
     )
 }
@@ -16,7 +16,7 @@ function Header() {
     return (
         <header className="ResultsHeader">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-                <g fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <g fill="none" stroke="#16a34a" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     
                     {/* Circle */}
                     <circle cx="12" cy="12" r="9"/>
@@ -36,7 +36,7 @@ function ResultsText({ text }) {
         <div className='ResultsTextDiv'>
             <div className='ResultsTextTitle'>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                    <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         
                         {/* File outline */}
                         <path d="M6 3H14L20 9V21H6Z"/>
@@ -72,8 +72,8 @@ function ResultsImage({ imageUrl }) {
     )
 }
 
-function ReturnHomeButton() {
+function ReturnHomeButton({ goToHome }) {
     return(
-        <button className='ResultReturnHome'>Return Home</button>
+        <button className='ResultReturnHome' onClick={ goToHome }>Return Home</button>
     )
 }

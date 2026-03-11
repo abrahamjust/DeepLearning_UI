@@ -1,12 +1,12 @@
 import "./Scan.css"
 export { Scan };
 
-function Scan() {
+function Scan({ goToHome, goToLoading }) {
     return (
         <div className="ScanContainer">
-            <Header />
-            <Upload />
-            <TakePhoto />
+            <Header goToHome={goToHome}/>
+            <Upload goToLoading={goToLoading}/>
+            <TakePhoto goToLoading={goToLoading}/>
             <Footer />
         </div>
     )
@@ -25,11 +25,11 @@ function Footer() {
     )
 }
 
-function Header() {
+function Header({ goToHome }) {
     return (
         <header className="ScanHeader">
             <div className="ScanHeaderDiv">
-                <button className="BackButton">
+                <button className="BackButton" onClick={goToHome}>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M19 12H7M12 5L5 12L12 19" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
@@ -40,12 +40,12 @@ function Header() {
     )
 }
 
-function Upload() {
+function Upload({ goToLoading }) {
     return (
         <div className="ScanUploadOuterContainer">
             <div className="ScanUploadInnerContainer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" className="ScanUploadSVG">
-                    <g fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <g fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                         
                         {/* Arrow */}
                         <path d="M12 16V6"/>
@@ -63,6 +63,7 @@ function Upload() {
                     accept="image/png, image/jpeg, application/pdf"
                     id="uploadInput"
                     className="ScanUploadInput"
+                    onChange={goToLoading}
                 />
 
                 <label htmlFor="uploadInput" className="ScanUploadButton">
@@ -73,14 +74,14 @@ function Upload() {
     )
 }
 
-function TakePhoto() {
+function TakePhoto({ goToLoading }) {
     return (
         <div className="ScanPhotoOuterContainer">
-            <input type="file" accept="image/*" capture="environment" id="takePhotoInput"/>
+            <input type="file" accept="image/*" capture="environment" id="takePhotoInput" onChange={goToLoading}/>
             <div className="ScanPhotoInnerContainer">
                 <label htmlFor="takePhotoInput" className="ScanPhotoInnerContainerLabel">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                        <g fill="none" stroke="grey" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <g fill="none" stroke="grey" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
 
                             {/* Camera body */}
                             <rect x="3" y="7" width="18" height="12" rx="2"/>
